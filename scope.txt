@@ -7,7 +7,7 @@ SCOPE:
 	CSRF tokens
 	Aggregate user controls
 	Session cookies (domain)
-	Crossdomain.xml
++	Crossdomain.xml
 	SQL query
 	Re authentication
 	Open forwards & redirects
