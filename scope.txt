@@ -35,7 +35,7 @@ SCOPE:
 	Session hijacking and fixation
 +	Session cookies HttpOnly
 +	Secure session cookies
-	Timeout a session
++	Timeout a session
 	User registration SQL truncation
 	White listing
 +	X Content Type Options header
