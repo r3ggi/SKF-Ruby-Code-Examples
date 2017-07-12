@@ -1,6 +1,6 @@
 SCOPE:
 +	Content type headers
-	Charsets
++	Charsets
 +	Anti clickjacking headers
 +	Anti caching headers
 	Audit logs
