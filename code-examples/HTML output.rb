@@ -6,7 +6,6 @@
 # submitted towards the url, all user input should be properly escaped to prevent XSS injections.
 
 # For normal output it is recommended use sanitize with the most restrict options
-# Add the following code to APP_DIR/views/YOUR_CONTROLLER/YOUR_VIEW.html.erb
 <%= sanitize(test, tags: [], attributes: []) %>
 
 # Security consists of different layers of protection, in order to guarantee the integrity
