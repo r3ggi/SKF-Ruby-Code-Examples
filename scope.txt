@@ -25,7 +25,7 @@ SCOPE:
 	Privilege based authentication
 	Identifier based authorization
 	Login functionality
-	Debug enabling
++	Debug enabling
 	Logout function
 	Password storage(salting stretching hashing)
 	XSL injection prevention
