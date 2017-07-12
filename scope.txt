@@ -33,7 +33,7 @@ SCOPE:
 	X path query
 	System commands
 	Session hijacking and fixation
-	Session cookies HttpOnly
++	Session cookies HttpOnly
 	Secure session cookies
 	Timeout a session
 	User registration SQL truncation
