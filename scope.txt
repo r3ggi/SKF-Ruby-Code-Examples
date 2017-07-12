@@ -38,7 +38,7 @@ SCOPE:
 	Timeout a session
 	User registration SQL truncation
 	White listing
-	X Content Type Options header
++	X Content Type Options header
 +	X XSS Protection header
 	XML External entities
 	XML injection prevention
