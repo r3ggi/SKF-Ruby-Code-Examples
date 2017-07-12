@@ -19,7 +19,7 @@ SCOPE:
 	Password forget and disallow old passwords
 	Random password token generation
 	Enforce secure passwords
-	HTML output
++	HTML output
 	Directory path traversal
 	Directory listing
 	Privilege based authentication
