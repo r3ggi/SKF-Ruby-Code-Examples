@@ -6,7 +6,7 @@ SCOPE:
 	Audit logs
 	CSRF tokens
 	Aggregate user controls
-	Session cookies (domain)
++	Session cookies (domain)
 +	Crossdomain.xml
 	SQL query
 	Re authentication
