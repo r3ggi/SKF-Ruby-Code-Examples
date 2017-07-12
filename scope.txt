@@ -1,8 +1,8 @@
 SCOPE:
 	Content type headers
 	Charsets
-	Anti clickjacking headers
-	Anti caching headers
++	Anti clickjacking headers
++	Anti caching headers
 	Audit logs
 	CSRF tokens
 	Aggregate user controls
@@ -39,6 +39,6 @@ SCOPE:
 	User registration SQL truncation
 	White listing
 	X Content Type Options header
-	X XSS Protection header
++	X XSS Protection header
 	XML External entities
 	XML injection prevention
