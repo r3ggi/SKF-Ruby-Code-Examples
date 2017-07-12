@@ -29,7 +29,7 @@ SCOPE:
 	Logout function
 	Password storage(salting stretching hashing)
 	XSL injection prevention
-	Sandboxing
++	Sandboxing
 	X path query
 	System commands
 	Session hijacking and fixation
