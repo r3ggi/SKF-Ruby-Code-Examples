@@ -7,4 +7,4 @@
 
 #Add the following code to APP_DIR/config/environments/production.rb
 
-config.encoding = "uft-8"
+config.encoding = "utf-8"
