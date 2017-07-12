@@ -1,4 +1,4 @@
-# Secure session cookies
+# Timeout a session
 
 # Example:
 
