@@ -3,7 +3,7 @@ SCOPE:
 +	Charsets
 +	Anti clickjacking headers
 +	Anti caching headers
-	Audit logs
++	Audit logs
 +	CSRF tokens
 	Aggregate user controls
 +	Session cookies (domain)
