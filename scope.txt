@@ -17,7 +17,7 @@ SCOPE:
 	Encoder
 	RFD and file download injection prevention
 	Password forget and disallow old passwords
-	Random password token generation
++	Random password token generation
 	Enforce secure passwords
 +	HTML output
 	Directory path traversal
