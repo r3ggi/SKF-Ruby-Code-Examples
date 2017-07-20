@@ -10,7 +10,7 @@ SCOPE:
 +	Crossdomain.xml
 	SQL query
 	Re authentication
-	Open forwards & redirects
++	Open forwards & redirects
 	Enforce sequential step order shopping
 	File upload
 	Input validation
