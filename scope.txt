@@ -4,7 +4,7 @@ SCOPE:
 +	Anti clickjacking headers
 +	Anti caching headers
 	Audit logs
-	CSRF tokens
++	CSRF tokens
 	Aggregate user controls
 +	Session cookies (domain)
 +	Crossdomain.xml
