@@ -7,7 +7,7 @@
 # Then install Devise Security Extension gem (https://github.com/phatworx/devise_security_extension)
 # Follow the installing instructions mentioned on Github
 
-# Now it's time to configure the gem in config/initializers/devise.rb
+# Now it's time to configure the gem in APP_DIR/config/initializers/devise.rb
 # Uncomment and customize following lines of code
 
 # Configuration of the gem core

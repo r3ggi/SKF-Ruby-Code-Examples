@@ -16,7 +16,7 @@ SCOPE:
 	Input validation
 	Encoder
 	RFD and file download injection prevention
-	Password forget and disallow old passwords
++	Password forget and disallow old passwords
 +	Random password token generation
 +	Enforce secure passwords
 +	HTML output
