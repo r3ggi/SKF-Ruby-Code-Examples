@@ -27,7 +27,7 @@ SCOPE:
 	Login functionality
 +	Debug enabling
 	Logout function
-	Password storage(salting stretching hashing)
++	Password storage(salting stretching hashing)
 	XSL injection prevention
 +	Sandboxing
 	X path query
