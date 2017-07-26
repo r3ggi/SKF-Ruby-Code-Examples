@@ -26,7 +26,7 @@ SCOPE:
 	Identifier based authorization
 	Login functionality
 +	Debug enabling
-	Logout function
++	Logout function
 +	Password storage(salting stretching hashing)
 	XSL injection prevention
 +	Sandboxing
