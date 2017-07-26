@@ -8,7 +8,7 @@ SCOPE:
 	Aggregate user controls
 +	Session cookies (domain)
 +	Crossdomain.xml
-	SQL query
++	SQL query
 	Re authentication
 +	Open forwards & redirects
 	Enforce sequential step order shopping
