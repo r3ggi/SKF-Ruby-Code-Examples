@@ -14,7 +14,7 @@ SCOPE:
 	Enforce sequential step order shopping
 	File upload
 	Input validation
-	Encoder
++	Encoder
 	RFD and file download injection prevention
 +	Password forget and disallow old passwords
 +	Random password token generation

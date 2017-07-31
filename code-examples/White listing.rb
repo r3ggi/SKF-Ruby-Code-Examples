@@ -8,6 +8,6 @@ def check_pattern(param)
                 Rails.logger.info "#{session.id} -> Good whitelist validation"
                 return true
         end
-        Rails.logger.info "#{session.id} -> Bad whitelist validation"
+        Rails.logger.warn "#{session.id} -> Bad whitelist validation"
         return false
 end
