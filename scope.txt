@@ -13,7 +13,7 @@ SCOPE:
 +	Open forwards & redirects
 	Enforce sequential step order shopping
 	File upload
-	Input validation
++	Input validation
 +	Encoder
 	RFD and file download injection prevention
 +	Password forget and disallow old passwords
