@@ -31,7 +31,7 @@ SCOPE:
 	XSL injection prevention
 +	Sandboxing
 	X path query
-	System commands
++	System commands
 	Session hijacking and fixation
 +	Session cookies HttpOnly
 +	Secure session cookies

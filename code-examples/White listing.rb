@@ -2,8 +2,9 @@
 
 # Example
 
-def check_pattern(param)
-        list = ["value1", "value2"]
+def check_pattern(param, list = [])
+        # List should be an array of allowed patterns
+        # list = ["value1", "value2"]
         if list.include? param
                 Rails.logger.info "#{session.id} -> Good whitelist validation"
                 return true
