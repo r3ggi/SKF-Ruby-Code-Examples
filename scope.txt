@@ -21,7 +21,7 @@ SCOPE:
 +	Enforce secure passwords
 +	HTML output
 	Directory path traversal
-	Directory listing
++	Directory listing
 	Privilege based authentication
 	Identifier based authorization
 	Login functionality
