@@ -32,7 +32,7 @@ SCOPE:
 +	Sandboxing
 	X path query
 +	System commands
-	Session hijacking and fixation
++	Session hijacking and fixation
 +	Session cookies HttpOnly
 +	Secure session cookies
 +	Timeout a session
