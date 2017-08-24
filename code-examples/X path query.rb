@@ -1,5 +1,7 @@
 # X Path query
 
+require "Nokogiri"
+
 # Include the classes where you want to make objects of:
 require_relative "classes"
 

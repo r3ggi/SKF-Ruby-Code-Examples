@@ -41,4 +41,4 @@ SCOPE:
 +	X Content Type Options header
 +	X XSS Protection header
 +	XML External entities
-	XML injection prevention
++	XML injection prevention
