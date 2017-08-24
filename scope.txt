@@ -22,7 +22,7 @@ Written	  Reviewed    Name
 +             -    	Random password token generation
 +             -    	Enforce secure passwords
 +             -    	HTML output
--             - 	Directory path traversal
++             - 	Directory path traversal
 +             -    	Directory listing
 -             - 	Privilege based authentication
 -             - 	Identifier based authorization
