@@ -7,7 +7,7 @@ Written	  Reviewed    Name
 +             -    	Anti caching headers
 +             -    	Audit logs
 +             -    	CSRF tokens
--             - 	Aggregate user controls
++             - 	Aggregate user controls
 +             -    	Session cookies (domain)
 +             -    	Crossdomain.xml
 +             -    	SQL query
