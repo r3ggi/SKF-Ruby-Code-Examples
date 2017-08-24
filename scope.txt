@@ -30,7 +30,7 @@ Written	  Reviewed    Name
 +             -    	Debug enabling
 +             -    	Logout function
 +             -    	Password storage(salting stretching hashing)
--             - 	XSL injection prevention
++             - 	XSL injection prevention
 +             -    	Sandboxing
 +             -    	X path query
 +             -    	System commands
