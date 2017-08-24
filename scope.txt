@@ -38,7 +38,7 @@ Written	  Reviewed    Name
 +             -    	Session cookies HttpOnly
 +             -    	Secure session cookies
 +             -    	Timeout a session
--             - 	User registration SQL truncation
++             - 	User registration SQL truncation
 +             -    	White listing
 +             -    	X Content Type Options header
 +             -    	X XSS Protection header
