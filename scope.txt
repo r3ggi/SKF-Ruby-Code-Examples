@@ -30,7 +30,7 @@ SCOPE:
 +	Password storage(salting stretching hashing)
 	XSL injection prevention
 +	Sandboxing
-	X path query
++	X path query
 +	System commands
 +	Session hijacking and fixation
 +	Session cookies HttpOnly
