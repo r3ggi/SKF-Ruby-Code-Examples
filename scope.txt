@@ -26,7 +26,7 @@ Written	  Reviewed    Name
 +             -    	Directory listing
 -             - 	Privilege based authentication
 -             - 	Identifier based authorization
--             - 	Login functionality
++             - 	Login functionality
 +             -    	Debug enabling
 +             -    	Logout function
 +             -    	Password storage(salting stretching hashing)
