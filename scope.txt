@@ -17,7 +17,7 @@ Written	  Reviewed    Name
 -             - 	File upload
 +             -    	Input validation
 +             -    	Encoder
--             - 	RFD and file download injection prevention
++             - 	RFD and file download injection prevention
 +             -    	Password forget and disallow old passwords
 +             -    	Random password token generation
 +             -    	Enforce secure passwords
