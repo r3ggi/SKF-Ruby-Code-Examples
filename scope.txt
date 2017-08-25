@@ -14,7 +14,7 @@ Written	  Reviewed    Name
 +             - 	Re authentication
 +             -    	Open forwards & redirects
 -             - 	Enforce sequential step order shopping
--             - 	File upload
++             - 	File upload
 +             -    	Input validation
 +             -    	Encoder
 +             - 	RFD and file download injection prevention
