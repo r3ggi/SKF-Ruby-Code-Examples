@@ -12,11 +12,11 @@
 # your own function for achieving this. See the code examples and search for "Input encoding"
 # for more detailed information.
 
-require "Nokogiri"
+require 'nokogiri'
 
-xml_doc  = Nokogiri::XML("<employees><employee><name></name></employee></employees>")
+xml_doc = Nokogiri::XML('<employees><employee><name></name></employee></employees>')
 
-xml_doc.css("employees employee name").first.content = params[:name]
+xml_doc.css('employees employee name').first.content = params[:name]
 
 # In Nokogiri gem HTML Encoding is done by default. Printing xml_doc.to_xml should return
 # => "<?xml version=\"1.0\"?>\n<employees>\n  <employee>\n    <name>&lt;script&gt;alert(\"1\")&lt;/script&gt;</name>\n  </employee>\n</employees>\n"

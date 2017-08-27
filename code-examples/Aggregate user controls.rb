@@ -1,6 +1,6 @@
 # Aggregate user controls
 
-# First of all, you have to know that Devise gem is AUTHENTICATION gem, not AUTHORIZATION. 
+# First of all, you have to know that Devise gem is AUTHENTICATION gem, not AUTHORIZATION.
 # Using "before_action" in specific controllers will provide only authentication.
 
 # It is recommended to use authorization gem like Pundit over creating your own code
@@ -20,11 +20,11 @@
 	  end
 
 	  def update?
-	    user.admin? or not post.published?
+	    user.admin? || !post.published?
 	  end
 	end
 
-	#Controller authorization example
+	# Controller authorization example
 	def admin_list
 	  authorize Post # we don't have a particular post to authorize
 	  # Rest of controller action
