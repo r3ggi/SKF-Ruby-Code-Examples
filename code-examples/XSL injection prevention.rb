@@ -13,22 +13,19 @@
 # defined files, example:
 # check_pattern(params[:xslfile], "file1.xsl,file2.xsl,etc")
 
-require "Nokogiri"
+require 'nokogiri'
 
 # Include the classes of which you want to use objects from
-require_relative "classes"
+require_relative 'classes'
 
-class includeXSL
+class IncludeXSL
+  def including(param, white_list)
+    # check "Whitelisting" for method declaration
+    if check_pattern(param, white_list)
+      document = Nokogiri::XML(File.read('input.xml'))
+      template = Nokogiri::XSLT(File.read('template.xslt'))
 
-	def including(param, white_list)
-
-		# check "Whitelisting" for method declaration
-		if check_pattern(param, white_list)
-			document = Nokogiri::XML(File.read('input.xml'))
-			template = Nokogiri::XSLT(File.read('template.xslt'))
-
-			transformed_document = template.transform(document)
-		end
-
-	end
+      transformed_document = template.transform(document)
+    end
+  end
 end

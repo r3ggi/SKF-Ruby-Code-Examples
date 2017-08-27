@@ -1,8 +1,8 @@
 # XML External entities
 
-# Typically parsing XML files is done by using external gems like Nokogiri. In the Nokogiri using external entities
+# Typically parsing XML files is done by using external gems like Nokogiri. In Nokogiri using external entities
 # is turned off by default. Always check it in the documentation. If you want to be sure - turn off parsing external
-# entities explicite.
+# entities explicitly.
 
 # Example of turning off parsing external entities in Nokogiri gem
 require 'nokogiri'
