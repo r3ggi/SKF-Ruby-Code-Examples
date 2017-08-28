@@ -27,6 +27,6 @@ def get_files(input_parameter, pattern)
 
 	# If all went good we can send file based on user's given name
 	send_file input_parameter
-	return true
+	true
 
 end

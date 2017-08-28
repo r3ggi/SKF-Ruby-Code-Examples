@@ -25,7 +25,7 @@ Written	  Reviewed    Name
 +             - 	Directory path traversal
 +             -    	Directory listing
 -             - 	Privilege based authentication
--             - 	Identifier based authorization
++             - 	Identifier based authorization
 +             - 	Login functionality
 +             -    	Debug enabling
 +             -    	Logout function
