@@ -24,7 +24,7 @@ Written	  Reviewed    Name
 +             -    	HTML output
 +             - 	Directory path traversal
 +             -    	Directory listing
--             - 	Privilege based authentication
++             - 	Privilege based authentication
 +             - 	Identifier based authorization
 +             - 	Login functionality
 +             -    	Debug enabling
