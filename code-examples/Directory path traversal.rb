@@ -10,7 +10,8 @@ def get_files(input_parameter, pattern)
 
   # Second, we want to whitelist the filenames for expected values, in this example they are,
   # page1,page2 etc.. for more information about whitelisting see "whitelisting" in the code examples:
-  return false unless check_pattern(input_parameter, %w[page1 page2])
+  # pass the pattern to the check pattern, for instance  pattern = %w[page1 page2]
+  return false unless check_pattern(input_parameter, pattern)
 
   #If all went good we can send file based on user's given name
   send_file input_parameter
