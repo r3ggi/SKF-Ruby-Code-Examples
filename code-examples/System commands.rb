@@ -14,7 +14,7 @@ class SystemCommands
   # First, we want to filter the filenames for expected values. For this example we use only az/09
   # Whenever the values are tampered with, we can assume an attacker is trying to inject malicious input.
   # for more information about validation see "input validations" in the code examples:
-  def exec(param, validation_type)
+  def exec(param, validation_type, pattern)
     validator = Validation.new
 
     case validation_type
@@ -26,7 +26,7 @@ class SystemCommands
       return false
     end
 
-    return false unless check_pattern(param)
+    return false unless check_pattern(param, pattern)
 
     # If all went good we include the filename
     # Even though there is a match we still escape the shellcommand:
