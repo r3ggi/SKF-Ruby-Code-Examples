@@ -10,7 +10,8 @@ def identifier_based_authorization(input_parameter, pattern, id_to_auth)
 
   # Second, we want to whitelist the filenames for expected values, in this example they are,
   # file1,file2 etc.. for more information about whitelisting see "whitelisting" in the code examples:
-  return false unless check_pattern(input_parameter, %w[file1 file2])
+  # pass the pattern to the check pattern, for instance  pattern = %w[file1 file2]
+  return false unless check_pattern(input_parameter, pattern)
 
   # Whenever you are checking whether a user is restricted to review certain data,
   # the access restrictions should be processed serverside.
