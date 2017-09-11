@@ -3,20 +3,27 @@
 # In order to secure your session, you have to turn on SECURE and HTTPONLY cookies' flags
 # More info in: "Session cookies HTTPOnly" and "Secure session cookies"
 
-# Turn on Strict Transport Security Header in the ApplicationController
-class ApplicationController < ActionController::Base
-  before_filter :strict_transport_security
-  def strict_transport_security
-    if request.ssl?
-    	# Option 0 - simple version
-      	response.headers['Strict-Transport-Security'] = "max-age=31536000;"
-      	# Option 1 - if all present and future subdomains will be HTTPS
-      	response.headers['Strict-Transport-Security'] = "max-age=31536000; includeSubDomains"
-      	# Option 2 - Recommended: If the site owner would like their domain to be included in the HSTS preload
-    	# list maintained by Chrome (and used by Firefox and Safari), then use:
-		response.headers['Strict-Transport-Security'] = "StrictTransportSecurity: maxage=31536000; includeSubDomains; preload"
-    end
-  end
+# Turn on `force_ssl` in config/environments/production.rb
+Rails.application.configure do
+  # redirects all HTTP to HTTPS and also adds secure flag to your cookies
+  config.force_ssl = true
+
+  config.ssl_options = {
+    # HTTP Strict Transport Security configuration
+    hsts: {
+      # default
+      expires: 180.days,
+
+      # default - if all present and future subdomains will be HTTPS
+      subdomains: true,
+
+      # Recommended: If the site owner would like their domain to be included in the HSTS preload list
+      # defaults to false
+      preload: true
+    }
+  }
+
+  # more information can be found here: http://api.rubyonrails.org/classes/ActionDispatch/SSL.html
 end
 
 # After that add :trackable symbol to the devise configuration in users' model
@@ -25,7 +32,7 @@ end
 class User < ApplicationRecord
   has_many :posts
 
-  #Be sure that :trackable is added
+  # Be sure that :trackable is added
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :secure_validatable
 end
