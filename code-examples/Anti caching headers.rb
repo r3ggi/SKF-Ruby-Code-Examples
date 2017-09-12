@@ -6,5 +6,8 @@
 
 config.action_controller.perform_caching = false
 config.public_file_server.headers = {
-  'Pragma' => 'no-cache' # HTTP 1.0
+  'Cache-Control' => 'no-cache'
 }
+config.action_dispatch.default_headers = {  
+  'Pragma' => 'no-cache' 
+} 
