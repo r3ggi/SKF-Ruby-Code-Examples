@@ -5,33 +5,49 @@
 # This is the encoder method for whenever you have to allow certain
 # possibly dangerous characters into your code for i.e names such as O'reily
 
-class EncodeInput
+class Encoder
+  # include SanitizeHelper for the implementation of #sanitize method
+  include ActionView::Helpers::SanitizeHelper
+  # and this one to provide #sign_out
+  include Devise::Controllers::SignInOut
 
-	# Application has to protect itself. Every bad input the counter will increment. If the counter
-	# hits 3 user's session must be terminated. 
-	attr_reader :counter
+  PATTERN = '^[a-zA-Z0-9%s]+$'.freeze
 
-	def initialize
-		@counter = 0
-	end
+  attr_reader :store
 
-	def encoder(input, allowed_characters)
-		pattern = "^[a-zA-Z0-9"+allowed_characters+"]+$"
-		regex = Regexp.compile(pattern)
+  # If your application is running on multiple processes or machines make sure you use a key-value backend for Rails cache
+  # like Redis or Memcached. If you're using Unicorn/Passenger/Puma in clustered mode you're already running multiple processes!
+  # Alternatively you can provide your own implementation backed by either a key-value store or just your database.
+  def initialize(store = Rails.cache)
+    @store = store
+  end
 
-		unless input =~ regex
-			@counter += 1
+  def encode(user, input, allowed_characters)
+    pattern = PATTERN % allowed_characters
 
-			# Every bad input validation has to be logged.
-			Rails.logger.warn "#{session.id} -> Bad user input"
+    regex = Regexp.compile(pattern)
 
-			if @counter >= 3
-				# DO LOGOUT HERE
-			end
+    unless input =~ regex
+      cache_key = cache_key(user)
+      store.increment(cache_key)
 
-			return false
-		end
+      # Every bad input validation has to be logged.
+      Rails.logger.warn "#{user.id} -> Bad user input"
 
-		return sanitize(input)
-	end
+      if store.fetch(cache_key) >= 3
+        sign_out(user)
+        store.delete(cache_key)
+      end
+
+      return false
+    end
+
+    sanitize(input)
+  end
+
+  private
+
+  def cache_key(user)
+    "#{user.cache_key}/input_counter"
+  end
 end
